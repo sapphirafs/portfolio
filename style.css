@@ -27,7 +27,6 @@ html{
 
     body {
         overflow: hidden;
-       
         margin: 0 auto;
         text-align: center;
         max-height: 81vh;
@@ -44,15 +43,18 @@ html{
     padding: 25px;
     font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
-    width:96%;
-    position:relative;
-    left:2px;
+    width:100%;
+   
+    
 
   }
   
   nav ul {
     float: right;
     margin-right: -17px;
+    display:inline-flex;
+    justify-self: end;
+    margin-top: 0%;
   }
   
   nav li {
@@ -60,7 +62,7 @@ html{
     border-radius: 5px;
     margin-right: 25px;
     text-align: center;
-    background-color: #b97721;
+    background-color: rgb(61, 61, 61);
     box-shadow: 2px 2px 0 #bbbbbb;
   }
 
@@ -75,29 +77,25 @@ html{
   }
 
   a:hover{
-    text-decoration: wavy rgb(197, 233, 183) underline;
+    text-decoration: wavy rgb(124, 138, 165) underline;
     }
 
 /* ANIMATION FOR LOGO PICTURE */
-
-    
-
-.flip-box-front img, .flip-box-back img {
-    width:180px;
-  
-}
-
  
 
 .flip-box{
-   
-    
- 
-    background-color: transparent;
-    perspective: 1000px; 
-    -moz-perspective: 1000px; 
+  display:flex;
+  justify-content:center;
+  padding-top: 3rem;
+  margin-bottom:1rem;
   }
   
+
+  .flip-box-front img, .flip-box-back img {
+    width:180px;
+  }
+
+
   .flip-box-inner {
     position: relative;
     width: 100%;
@@ -264,7 +262,7 @@ html{
     nav li {
       margin-right: 10px;
       position:relative;
-      right:55px;
+      right:80px;
     }
   
     nav a {
@@ -275,10 +273,8 @@ html{
     }
     nav{ 
       padding: 1px;
-      width:96%;
-      
-      
     }
+
     .home-title h1{
       margin-right: 50px;
       font-size: 60px;
