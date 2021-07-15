@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+
+    <!-- SECTION 1 - nav & header-->
+
+    <nav class="clearfix" role="navigation">
+      <ul>
+        <li><a href="#site-header">About</a></li>
+        <li><a href="#projects-container">Projects</a></li>
+        <li><a href="#skills-container">Skills</a></li>
+        <li><a href="#contact-container">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header id="site-header">
+      <div class="flip-box container">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img
+              src="C:\projects\portfolio\images\cartoon me.png"
+              alt="Sapphira FS"
+              style="width: 144px; height: 144px"
+            />
+          </div>
+          <div class="flip-box-back">
+            <img
+              src="C:\projects\portfolio\images\me.png"
+              alt="Sapphira FS"
+              style="width: 144px; height: 144px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <hgroup class="home-title" role="site-header">
+          <h1>Sapphira FS</h1> <br/>
+          <h2>Web Developer</h2>
+        </hgroup>
+      </div>
+    </header>
+
+    <!-- SECTION 2 - intro and projects -->
+
+    <main role="main">
+      <section class="intro" role="text">
+        <div class="intro-container">
+          <p>
+            Hi! Welcome to my portfolio. <br />
+            I am a web developer based in London ☆ with a background in art and
+            design.
+          </p>
+        </div>
+      </section>
+
+      <!-- PROJECT CONTAINER -->
+      <section id="projects-container">
+        <h2>Projects</h2>
+
+        <details class="project">
+          <summary class="project-title">
+            <h3>Excursion</h3>
+          </summary>
+          <img
+            src="C:\projects\portfolio\images\exctursionscrnshot1small.png"
+            alt="An image from the Excursion web page"
+            class="excursion-img"
+            style="width: 400px"
+            height="236.57px"
+          />
+          <img
+            src="C:\projects\portfolio\images\exctursionscrnshot2small.png"
+            alt="An image from the Excursion web page"
+            class="excursion-img"
+            style="width: 400px"
+          />
+          <p class="project-description">
+            A Codecademy project: The webpage advertises a mobile app which
+            helps users record and share their experiences; Written in HTML and
+            CSS.
+          </p>
+        </details>
+        <details class="project">
+          <summary class="project-title">
+            <h3>Meal Planner</h3>
+          </summary>
+          <img
+            src="C:\projects\portfolio\images\mealplannerscrnshot.png"
+            alt="A screenshot of the code that runs Meal Planner"
+            class="meal-planner-img"
+            style="width: 700px"
+          />
+          <p class="project-description">
+            A short program that will output a random meal plan every time the
+            user runs it; Written with JS - the program runs on Node.js.
+          </p>
+        </details>
+        <details class="project style-guide">
+          <summary class="project-title">
+            <h3>Style Guide</h3>
+          </summary>
+          <img
+            src="C:\projects\portfolio\images\styleguidescrnshot1small.png"
+            alt="An image from the Style Guide web page"
+            class="style-guide-img"
+            style="width: 400px"
+          />
+          <img
+            src="C:\projects\portfolio\images\styleguidescrnshot3.png"
+            alt="An image from the Style Guide web page"
+            class="style-guide-img"
+            style="width: 400px"
+          />
+          <p class="project-description">
+            An example of a succinct guide for styling web pages
+          </p>
+        </details>
+      </section>
+
+      <!-- SECTION 3 - skils -->
+
+      <section id="skills-container">
+        <h2>Skills</h2>
+        <ul>
+          <li>CSS/HTML</li>
+          <li>JavaScript</li>
+          <li>Node.js</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Chrome DevTools</li>
+        </ul>
+      </section>
+
+      <!-- SECTION 4 - contact -->
+
+      <section id="contact-container">
+        <h2>Contact</h2>
+        <p>Please feel free to say hi at:</p>
+        <h3>sapphirafs@gmail.com</h3>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <p>&copy; 2021 sapphira fs</p>
+  </footer>
+</html>

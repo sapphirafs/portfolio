@@ -1,0 +1,293 @@
+
+/*RESET CODE*/
+
+
+
+
+
+
+
+/* BEGINNING*/
+
+html{
+   
+    background-color:#ffffff;
+}
+ 
+
+
+    @font-face {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCv6KVjbNBYlgoC1CzjsGyN.woff2) format('woff2');
+}
+
+
+    body {
+        overflow: hidden;
+       
+        margin: 0 auto;
+        text-align: center;
+        max-height: 81vh;
+        overflow-y: scroll;
+        position: absolute;
+        width: 100%;
+        right: -20px;
+      }
+
+
+      /* SECTION 1 (nav and header) */
+
+    nav {
+    padding: 25px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    width:96%;
+    position:relative;
+    left:2px;
+
+  }
+  
+  nav ul {
+    float: right;
+    margin-right: -17px;
+  }
+  
+  nav li {
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 25px;
+    text-align: center;
+    background-color: #b97721;
+    box-shadow: 2px 2px 0 #bbbbbb;
+  }
+
+
+  nav a {
+    display: inline-block;
+    width: 150px;
+    padding: 5px 0;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+  }
+
+  a:hover{
+    text-decoration: wavy rgb(197, 233, 183) underline;
+    }
+
+/* ANIMATION FOR LOGO PICTURE */
+
+    
+
+.flip-box-front img, .flip-box-back img {
+    width:180px;
+  
+}
+
+ 
+
+.flip-box{
+   
+    
+ 
+    background-color: transparent;
+    perspective: 1000px; 
+    -moz-perspective: 1000px; 
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    -webkit-transition: transform 0.8s;
+    transition: transform 0.8s;
+    -moz-transition: transform 0.8s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+  }
+  
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+  }
+  
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  
+  .flip-box-back {
+   
+    color: white;
+   -webkit-transform: rotateY(180deg);
+   -moz-transform: rotateY(180deg);
+   transform: rotateY(180deg);
+  }
+
+
+
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+ }
+
+ /* HEADER */
+
+#site-header {
+ 
+    
+}
+.container{
+   
+    
+}
+
+.home-title{
+    text-align: center;
+    border-bottom:solid rgb(61, 61, 61) 1px;
+    padding-bottom:2rem;
+}
+
+
+  h1,h2 {
+    text-align: center;
+    color: rgb(61, 61, 61);
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  }
+   
+    h1{
+      font-size: 70px;
+      letter-spacing: 0.5rem;
+    }
+    
+  
+  h2{
+    font-size: 40px;
+    letter-spacing: 0.1rem;
+  }
+  
+
+  /*.title-underlay{
+      width:100%;
+      height:90%;
+      background-color: #17254d;
+      position:absolute;
+      display:block;
+      right: 5px;
+      top:6%;
+      opacity: 0.3;
+      z-index: -1;
+      border-radius: 20px;
+  }
+  */
+  
+  
+  /* SECTION TWO*/
+
+  p{
+    text-align: center;
+    margin:30px 0 15px;
+    color: rgb(61, 61, 61);
+    font-size: 16px;
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  }
+  
+
+  h3{
+    text-align: center;
+    font-weight:bold;
+    color: rgb(61, 61, 61);
+    font-size: 16px;
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    letter-spacing: 0.1px;
+  }
+
+  .intro-container {
+    text-align:center;
+  }
+  
+  .intro-text-container {
+      display:inline-flex;
+    align-self:center;
+    margin-right:50%;
+  }
+  
+  .project-image {
+    width: 50%;
+  }
+  
+  .project-title h3 {
+    display: inline;
+  }
+  
+  details {
+    cursor: pointer;
+  }
+  
+  summary{
+    list-style-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg');
+  }
+  
+
+
+
+
+
+  /*TABLET*/
+ 
+  
+  @media only screen and (max-width: 800px) {
+
+
+
+    .flip-box-front img, .flip-box-back img {
+        width:160px;
+
+ }
+  
+    nav li {
+      margin-right: 10px;
+      position:relative;
+      right:55px;
+    }
+  
+    nav a {
+      width: 70px;
+      padding: 5px 0;
+      font-size: 16px;
+      
+    }
+    nav{ 
+      padding: 1px;
+      width:96%;
+      
+      
+    }
+    .home-title h1{
+      margin-right: 50px;
+      font-size: 60px;
+    }
+}
+
+/* PHONE SCREEEN */
+
+@media only screen and (max-width: 425px){
+    
+    
+}
