@@ -2,12 +2,13 @@
 <html>
   <head>
     <title>My Portfolio</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <!-- SECTION 1 - nav & header-->
+    
 
     <nav class="clearfix" role="navigation">
       <ul>
@@ -37,14 +38,20 @@
           </div>
         </div>
       </div>
-      <div class="container">
+
+
+  <!-- GRID -->
+      <div class="grid-container">
+      
+      
         <hgroup class="home-title" role="site-header">
           <h1>Sapphira FS</h1>
           <br />
           <h2>Web Developer</h2>
         </hgroup>
-      </div>
+      
     </header>
+  
 
     <!-- SECTION 2 - intro and projects -->
 
@@ -53,19 +60,22 @@
         <div class="intro-container">
           <p>
             Hi! Welcome to my portfolio. <br />
-            I am a web developer based in London ☆ with a background in art and
+            I am a web developer based in London &#9734; with a background in art and
             design.
           </p>
         </div>
       </section>
 
+
+      
       <!-- PROJECT CONTAINER -->
 
-      <div class="projects-title title">
+      
+      <div class="projects-title-container projects-title title">
         <h2>Projects</h2>
       </div>
       <section id="project-container" class="container">
-        <details class="project">
+        <details class="project project1">
           <summary class="project-title">
             <h3>Excursion</h3>
           </summary>
@@ -76,7 +86,7 @@
             style="width: 400px"
             height="236.57px"
           />
-          &nbsp;
+          <br>
           <img
             src="https://raw.githubusercontent.com/sapphirafs/portfolio/master/images/exctursionscrnshot2small.png"
             alt="An image from the Excursion web page"
@@ -89,7 +99,7 @@
             CSS.
           </p>
         </details>
-        <details class="project">
+        <details class="project project2">
           <summary class="project-title">
             <h3>Meal Planner</h3>
           </summary>
@@ -104,7 +114,7 @@
             user runs it; Written with JS - the program runs on Node.js.
           </p>
         </details>
-        <details class="project style-guide">
+        <details class="project project3 style-guide">
           <summary class="project-title">
             <h3>Style Guide</h3>
           </summary>
@@ -126,7 +136,7 @@
         </details>
       </section>
 
-      <!-- SECTION 3 - skils -->
+      <!-- SECTION 3 - skills -->
 
       <section id="skills-container" class="container">
         <div class="title">
@@ -147,9 +157,14 @@
           <h3>sapphirafs@gmail.com</h3>
         </div>
       </section>
+    </div>
+      <!-- END OF GRID -->
+
+    
     </main>
   </body>
   <footer>
     <p>&copy; 2021 sapphira fs</p>
   </footer>
 </html>
+
