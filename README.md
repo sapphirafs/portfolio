@@ -6,5 +6,6 @@ _______
 ## Technologies
 
 * CSS flexbox
+* CSS grid
 * HTML
 
