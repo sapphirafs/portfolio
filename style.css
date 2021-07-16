@@ -175,6 +175,54 @@ h3 {
   margin-right: 50%;
 }
 
+/* GRID-container */
+
+.grid-container {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  grid-template: repeat(18, 1fr) / 1fr 1fr 5fr 1fr 1fr;
+  grid-gap: 20% 2%;
+  grid-auto-flow: column;
+}
+
+.home-title {
+  grid-area: 1/ 3 / span 1 / span 1;
+  align-self: center;
+}
+
+.intro-container {
+  grid-area: 2/ 3 / span 1 / span 1;
+  align-self: center;
+}
+
+.projects-title-container {
+  grid-area: 3/ 3 / span 1 / span 1;
+  align-self: center;
+}
+
+.project-container {
+  grid-area: 3/ 3 / span 4 / span 1;
+  align-self: center;
+}
+
+.project1 {
+  grid-area: 4/ 3 / span 2 / span 1;
+  align-self: center;
+}
+.project2 {
+  grid-area: 5/ 3 / span 2 / span 1;
+  align-self: center;
+}
+
+details img {
+  align-self: center;
+}
+
+skills-container {
+}
+
 /* PROJECTS */
 
 .container {
@@ -253,12 +301,12 @@ footer p {
   nav li {
     margin-right: 10px;
     position: relative;
-    right: 80px;
+    right: 10px;
   }
 
   nav a {
     width: 70px;
-    padding: 5px 0;
+
     font-size: 16px;
   }
   nav {
@@ -266,21 +314,30 @@ footer p {
   }
 
   .home-title h1 {
-    margin-right: 50px;
     font-size: 60px;
+  }
+  details.project {
+    align-self: center;
   }
 }
 
 /* PHONE SCREEEN SIZE */
 
-@media only screen and (max-width: 425px) {
-  main {
-    display: grid;
-  }
+@media only screen and (max-width: 426px) {
   *,
   *::before,
   *::after {
     box-sizing: none;
   }
-}
 
+  p {
+    font-size: 16px;
+  }
+  .intro-container {
+    padding: 0 1px;
+  }
+
+  body {
+    padding: 1px;
+  }
+}
