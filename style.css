@@ -19,7 +19,6 @@ body {
   overflow-y: scroll;
   position: absolute;
   width: 100%;
-  right: -20px;
 }
 
 /* SECTION 1 (nav and header) */
@@ -55,6 +54,14 @@ nav a {
   text-decoration: none;
   font-size: 16px;
   color: white;
+}
+
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 a:hover {
@@ -111,14 +118,6 @@ a:hover {
   transform: rotateY(180deg);
 }
 
-.clearfix:after {
-  content: " ";
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both;
-}
-
 /* HEADER */
 
 .home-title {
@@ -163,51 +162,38 @@ h3 {
   letter-spacing: 0.1px;
 }
 
-
 /* INTRO PARA */
 
 .intro-container {
-  height:200px;
+  height: 200px;
   text-align: center;
- 
-  
-}
-
-.intro-container p{
-  
-  
- 
 }
 
 .intro-text-container {
   display: inline-flex;
   align-self: center;
   margin-right: 50%;
- 
-  
 }
 
 /* PROJECTS */
 
-.container{
-  
-display:flex;
-flex-basis: auto;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
--webkit-flex-wrap: wrap;
--moz-flex-wrap:wrap;
-flex-direction: column;
-
+.container {
+  display: flex;
+  flex-basis: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-direction: column;
 }
 
-div.title{
-  height:100px;
+div.title {
+  height: 100px;
 }
 
-.projects-title{
-  padding-top:1rem;
+.projects-title {
+  padding-top: 1rem;
 }
 
 .project-title h3 {
@@ -220,49 +206,41 @@ div.title{
   cursor: pointer;
 }
 
-
-
 .project-image {
   width: 50%;
 }
 
 /* SKILLS */
 
-#skills-container div.title{
-  padding-top:3rem;
+#skills-container div.title {
+  padding-top: 3rem;
 }
 
-ul{
+ul {
   margin-top: 1rem;
   text-align: left;
 }
-li{
+li {
   font-size: 16px;
   font-family: "Ubuntu", Helvetica, Arial, sans-serif;
-  
 }
-
 
 /* CONTACT*/
 
-section #conact-container.container{
-  display:flex;
+section #conact-container.container {
+  display: flex;
   justify-self: center;
 }
-.contact{
+.contact {
   padding-top: 4rem;
 }
 
-
-
 /*FOOTER*/
 
-footer p{
+footer p {
   text-align: right;
-  margin:2rem;
+  margin: 2rem;
 }
-
-
 
 /*TABLET SIZE*/
 
@@ -296,6 +274,13 @@ footer p{
 /* PHONE SCREEEN SIZE */
 
 @media only screen and (max-width: 425px) {
-
-
+  main {
+    display: grid;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: none;
+  }
 }
+
